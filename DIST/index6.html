@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+   
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen  dark:bg-gray-900 p-10 gap-8 min-h-screen ">
+    <div class="flex justify-end p-4">
+        <button id="toggleDarkMode" class="bg-indigo-600 text-white px-4 py-2  rounded shadow hover:bg-indigo-700 transition">Toggle Theme</button>
+    </div>
+    <div class="bg-white dark:bg-gray-800  px-6 py-8 ring-1 ring-gray-900/5 rounded-xl shadow-lg w-80"> 
+        <div> 
+            <span class=" inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg">
+                <img src="https://png.pngtree.com/png-vector/20190116/ourmid/pngtree-vector-notes-icon-png-image_322065.jpg "  class="h-6 w-6" alt="icon">
+            </span>
+            <h3 class="text-gray-900 mt-5 dark:text-white font-medium tracking-tight text-base">Writes upside-down</h3>
+            <p class="text-gray-500 dark:text-gray-400 mt-2 text-sm">The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.</p>
+        </div>
+    </div>
+     <script>
+        const togglebtn =document.getElementById('toggleDarkMode')
+        const html = document.documentElement
+        console.log(html)
+        togglebtn.addEventListener('click',()=>{
+            html.classList.toggle('dark');
+            console.log(html.classList)
+        });
+    </script>
+</body>
+</html>
