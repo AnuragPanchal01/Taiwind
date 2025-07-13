@@ -25,44 +25,48 @@
         <h2 class="text-lg font-semibold">Payment Method</h2>
 
         <!--Google Pay-->
-        <label for="GPay" class="flex items-center  justify-between p-4 border rounded-lg cursor-pointer has-checked:bg-indigo-50 has-checked:text-indigo-900 has-checked:ring-2 hover:bg-slate-200 transition">
-            <div class="flex items-center gap-2">
-                <span class="text-lg font-medium">GPay</span>
-                <span class="text-sm">Google Pay</span></div>
+        <label for="GPay" class="block cursor-pointer">
           <input
         type="radio"
         name="payment"
         class="peer hidden"
         id="GPay"
-      
+      checked
       />  
+      <div class="flex items-center  justify-between p-4 border rounded-lg  peer-checked:bg-indigo-50 peer-checked:text-indigo-900 peer-checked:ring-2  hover:bg-slate-200  transition">
+            <div class="flex items-center gap-2">
+                <span class="text-lg font-medium">GPay</span>
+                <span class="text-sm">Google Pay</span></div>
+                </div>
         </label>
         <!--Apple Pay-->
-        <label for="apple" class="flex items-center  justify-between p-4 border rounded-lg cursor-pointer has-checked:bg-indigo-50 has-checked:text-indigo-900 has-checked:ring-2  hover:bg-slate-200  transition">
+        <label for="apple" class="block cursor-pointer">
+          <input
+type="radio"
+name="payment"
+id="apple"
+class="peer hidden"
+checked
+/>      <div class="flex items-center  justify-between p-4 border rounded-lg  peer-checked:bg-indigo-50 peer-checked:text-indigo-900 peer-checked:ring-2  hover:bg-slate-200  transition">
             <div class="flex items-center gap-2">
                 <span class="text-lg font-medium">Pay</span>
                 <span class="text-sm">Apple Pay</span></div>
-                    <input
-        type="radio"
-        name="payment"
-        id="apple"
-        class="peer hidden"
-       
-      />  
+                </div>
         </label>
         <!--Visa-->
-           <label for="visa" class="flex items-center  justify-between p-4 border rounded-lg cursor-pointer has-checked:bg-indigo-50 has-checked:text-indigo-900 has-checked:ring-2  hover:bg-slate-200  transition">
-            <div class="flex items-center gap-2">
-                <span class="text-lg font-medium">VISA</span>
-                <span class="text-sm">Credit Card</span></div>
-                    <input
-        type="radio"
-        name="payment"
-        id="visa"
-        class=" peer hidden"
-      
-      />  
-        </label>
+           <label for="visa" class="block cursor-pointer">
+             <input
+ type="radio"
+ name="payment"
+ id="visa"
+ class=" peer hidden"
+checked
+/>   <div class="flex items-center  justify-between p-4 border rounded-lg  peer-checked:bg-indigo-50 peer-checked:text-indigo-900 peer-checked:ring-2  hover:bg-slate-200  transition">
+<div class="flex items-center gap-2">
+  <span class="text-lg font-medium">VISA</span>
+  <span class="text-sm">Credit Card</span></div>
+  </div>
+</label>
 
     </div>
 
