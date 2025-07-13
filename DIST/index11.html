@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+      <style>
+    @layer utilities {
+      .has-checked\:bg-indigo-50:has(:checked) {
+        background-color: #eef2ff;
+      }
+      .has-checked\:text-indigo-900:has(:checked) {
+        color: #312e81;
+      }
+      .has-checked\:ring-2:has(:checked) {
+        box-shadow: 0 0 0 2px #6366f1;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white border border-slate-200 w-full max-w-md p-6 space-y-4 rounded-lg">
+        <h2 class="text-lg font-semibold">Payment Method</h2>
+
+        <!--Google Pay-->
+        <label for="GPay" class="flex items-center  justify-between p-4 border rounded-lg cursor-pointer has-checked:bg-indigo-50 has-checked:text-indigo-900 has-checked:ring-2 hover:bg-slate-200 transition">
+            <div class="flex items-center gap-2">
+                <span class="text-lg font-medium">GPay</span>
+                <span class="text-sm">Google Pay</span></div>
+          <input
+        type="radio"
+        name="payment"
+        class="peer hidden"
+        id="GPay"
+      
+      />  
+        </label>
+        <!--Apple Pay-->
+        <label for="apple" class="flex items-center  justify-between p-4 border rounded-lg cursor-pointer has-checked:bg-indigo-50 has-checked:text-indigo-900 has-checked:ring-2  hover:bg-slate-200  transition">
+            <div class="flex items-center gap-2">
+                <span class="text-lg font-medium">Pay</span>
+                <span class="text-sm">Apple Pay</span></div>
+                    <input
+        type="radio"
+        name="payment"
+        id="apple"
+        class="peer hidden"
+       
+      />  
+        </label>
+        <!--Visa-->
+           <label for="visa" class="flex items-center  justify-between p-4 border rounded-lg cursor-pointer has-checked:bg-indigo-50 has-checked:text-indigo-900 has-checked:ring-2  hover:bg-slate-200  transition">
+            <div class="flex items-center gap-2">
+                <span class="text-lg font-medium">VISA</span>
+                <span class="text-sm">Credit Card</span></div>
+                    <input
+        type="radio"
+        name="payment"
+        id="visa"
+        class=" peer hidden"
+      
+      />  
+        </label>
+
+    </div>
+
+</body>  
+</html>
